@@ -1,0 +1,18 @@
+.nav-item.active {
+    background-color: orange;
+    border-radius: 40px;
+}
+
+.nav-item.active:active {
+    background-color: rgb(190, 124, 0);
+    border-radius: 40px;
+}
+
+.nav-item:hover {
+    background-color: rgb(252, 192, 80);
+    border-radius: 40px;
+}
+
+/* .nav-item.active {
+    background-color: blue;
+} */
