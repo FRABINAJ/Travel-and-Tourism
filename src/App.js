@@ -1,4 +1,5 @@
 import './App.css';
+// import Form from './test/Form';
 import Header from './Header/Header';
 import Routing from './Routing/Routing';
 
@@ -7,6 +8,8 @@ function App() {
     <div className="App">
       <Header />
       <Routing/>
+      {/* <Form/> */}
+
     </div>
   );
 }

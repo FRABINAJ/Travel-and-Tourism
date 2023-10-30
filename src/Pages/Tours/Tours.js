@@ -1,9 +1,14 @@
 import React from 'react'
+import './Tours.css'
+import AllTours from "./tour.jpg"
 
 const Tours = () => {
   return (
     <div>
-      <h2>Tours</h2>
+      <div className='container-fluid'>
+        <img className="AllTourImage" src={AllTours} />
+        <h1 class="centered">All Tours</h1>
+      </div>
     </div>
   )
 }

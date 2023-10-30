@@ -1,5 +1,5 @@
 .nav-item.active {
-    background-color: orange;
+    background-color: #FAA935;
     border-radius: 40px;
 }
 
@@ -12,7 +12,3 @@
     background-color: rgb(252, 192, 80);
     border-radius: 40px;
 }
-
-/* .nav-item.active {
-    background-color: blue;
-} */
