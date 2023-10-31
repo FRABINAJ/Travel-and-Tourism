@@ -11,3 +11,65 @@
     transform: translate(-50%, -50%);
     color: white;
 }
+
+.subscribediv {
+    background-color: #CAE5F4;
+    width: 100%;
+    height: auto;
+}
+
+.subfieldmaincol {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.subfieldcol {
+    flex: 50%;
+}
+
+.responsive-image {
+    height: 300px;
+    width: auto;
+}
+
+.email-div {
+    background-color: white;
+    height: 70px;
+    width: 150;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.subscribebutton {
+    background-color: #FAA935;
+    border: 1px solid #FAA935;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive layout - makes the form and the button stack on top of each other */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="text"] {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}

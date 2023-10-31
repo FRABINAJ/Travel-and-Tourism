@@ -1,3 +1,145 @@
 a {
     text-decoration: none;
 }
+
+.hometravelsection {
+    display: inline-flex;
+}
+
+.hometravelsectiondiv {
+    background-color: #FAA935;
+    border: 1px solid #FAA935;
+    border-radius: 20px;
+    width: auto;
+}
+
+.hometravelsectiondivp {
+    font-family: "Brush Script MT", cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 26.4px;
+}
+
+.heroimg1div {
+    border: 2px solid #FAA935;
+    border-radius: 20px;
+}
+
+.heroimg {
+    width: 180px;
+    height: 400px;
+}
+
+.whatweserve {
+    font-family: cursive;
+    text-align: left;
+    font-style: italic;
+    color: #ec5555;
+    font-weight: 100;
+}
+
+.alignleft {
+    text-align: left;
+}
+
+.home2 {
+    border-right: 2px solid #FAA935;
+    border-bottom: 2px solid #FAA935;
+    border-radius: 10px;
+}
+
+.experiencebutton {
+    height: 70px;
+    width: 70px;
+    background-color: #FF7E01;
+    border: 1px solid #FF7E01;
+    border-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    /*  */
+}
+
+.experiencebuttonp {
+    color: white;
+    font-size: large;
+    font-weight: 600;
+
+}
+
+
+.gallaryimage {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.gallaryimage:hover {
+    /* width: 300px; */
+    transform: scale(1.1);
+}
+
+
+/*  */
+/*  */
+.subscribediv {
+    background-color: #CAE5F4;
+    width: 100%;
+    height: auto;
+}
+
+.subfieldmaincol {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.subfieldcol {
+    flex: 50%;
+}
+
+.responsive-image {
+    height: 300px;
+    width: auto;
+}
+
+.email-div {
+    background-color: white;
+    height: 70px;
+    width: 150;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.subscribebutton {
+    background-color: #FAA935;
+    border: 1px solid #FAA935;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive layout - makes the form and the button stack on top of each other */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="text"] {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
