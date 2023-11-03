@@ -13,7 +13,6 @@ import githubicon from './githubicon.svg'
 import linkdinicon from './linkdinicon.svg'
 import instagramicon from './instagramicon.svg'
 //
-import registrerpath from "../Register/Register.js"
 
 const Login = () => {
   // Form validation 
@@ -47,7 +46,7 @@ const Login = () => {
       <div>
 
 <>
-  <section className="h-100 " style={{ backgroundColor: "#eee" }}>
+  <section id='loginid' className="h-100 " style={{ backgroundColor: "#eee" }}>
     <div className="container-fluid py-5 ">
       <div className="row d-flex justify-content-center align-items-center h-100">
         <div className="col-xl-10">
@@ -64,11 +63,11 @@ const Login = () => {
                   </div>
                   {/*  */}
                   <form className='form-group row' onSubmit={handleSubmit}>
-                    <div className="form-outline mb-4">
+                    <div className="form-outline-white mb-4">
                       <input type="email" id="emailid" className="form-control" placeholder='Email' maxLength={30} value={email} onChange={(e) => setEmail(e.target.value)} required />
                       <span id="email-error" class="error"></span>
                     </div>
-                    <div className="form-outline mb-4">
+                    <div className="form-outline-white mb-4">
                       <input type="password" id="passwordid" className="form-control" placeholder="Password" maxLength={20} value={password} onChange={(e) => setPassword(e.target.value)} required />
                       <span id="pwd-error" class="error"></span>
                     </div>
@@ -97,7 +96,7 @@ const Login = () => {
 <footer className="text-center text-lg-start text-white" style={{ backgroundColor: "white" }}>
 
   <section className="row">
-    <div className="container text-center text-md-start pt-5">
+    <div className="container border-0 text-center text-md-start pt-5">
       <div className="row mt-3">
         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <img className="text-uppercase fw-bold pb-3" src="https://www.achieversit.com/assets/images/logo-white.png" height={"70px"} />
@@ -107,32 +106,32 @@ const Login = () => {
           <div className="" style={{ display: "inline-flex", gap: "10px" }} >
             <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={usericon} /></Link>
             <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={githubicon} /></Link>
-            <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={linkdinicon} /></Link>
-            <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={instagramicon} /></Link>
+            <Link to='https://www.linkedin.com/company/achieversit-trainings/'><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={linkdinicon} /></Link>
+            <Link to="https://www.instagram.com/achieversit/"><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={instagramicon} /></Link>
           </div>
         </div>
         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 className="text-uppercase fw-bold text-dark pb-3">Discover</h6>
           <p>
-            <a href="#!" className="text-dark">Home </a>
+            <Link to="/home" className="text-dark">Home </Link>
           </p>
           <p>
-            <a href="#!" className="text-dark">About</a>
+            <Link to="/about" className="text-dark">About</Link>
           </p>
           <p>
-            <a href="#!" className="text-dark">Tours</a>
+            <Link to="/tours" className="text-dark">Tours</Link>
           </p>
         </div>
         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 className="text-uppercase fw-bold text-dark pb-3">Quick Link</h6>
           <p>
-            <a href="#!" className="text-dark">Gallery</a>
+            <Link to="/home" className="text-dark">Gallery</Link>
           </p>
           <p>
-            <a href="#!" className="text-dark">Login</a>
+            <a href='#loginid' className="text-dark">Login</a>
           </p>
           <p>
-            <a href="#!" className="text-dark">Register</a>
+            <Link to="/register" className="text-dark">Register</Link>
           </p>
         </div>
         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

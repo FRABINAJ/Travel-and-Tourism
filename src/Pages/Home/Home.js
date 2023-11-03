@@ -15,11 +15,26 @@ import world from "./world.png"
 import hero1 from "./hero-img01.jpg"
 import video from "./video.mp4"
 import hero2 from "./hero-img02.jpg"
+// search div
+import searchlocation from "./searchlocation.png"
+import searchdistance from "./searchdistance.png"
+import people from "./people.png"
+import searchicon from "./searchicon.png"
 //
 import weather from "././weather.png"
 import plugins from "./guide.png"
 import sstings from "./customization.png"
 //
+// Tour travel
+import tourimg1 from "./tour-img01.jpg"
+import tourimg2 from "./tour-img02.jpg"
+import tourimg3 from "./tour-img03.jpg"
+import tourimg4 from "./tour-img04.jpg"
+import tourimg5 from "./tour-img05.jpg"
+import tourimg6 from "./tour-img06.jpg"
+import tourimg7 from "./tour-img07.jpg"
+import staricon from "./star icon.png"
+import loc from "./loc.png"
 // Section 4
 import experience from "./experience.png"
 //
@@ -32,18 +47,41 @@ import gallery5 from "./gallery-05.jpg"
 import gallery6 from "./gallery-06.jpg"
 import gallery7 from "./gallery-07.jpg"
 import gallery8 from "./gallery-08.jpg"
+//Slideer div
 //
+import ava1 from "./ava-1.jpg"
+import ava2 from "./ava-2.jpg"
+import ava3 from "./ava-3.jpg"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdb-ui-kit/css/mdb.min.css';
+//
+
 // emailDiv
 import MaleTourist from "./male-tourist.png"
 //
 import { Link } from "react-router-dom";
 import { PageHeader } from "react-bootstrap";
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossOrigin="anonymous"
+/>
+{/* MDB CSS */ }
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.css"
+    rel="stylesheet"
+/>
 //
 const Home = () => {
+    function ala() {
+        alert("Create an account")
+    }
+
     return (
         <div>
             {/* 1st travel section */}
-            <div className="container-fluid hometravelsection" style={{ paddingTop: "50px" }}>
+            <div className="container-fluid hometravelsection" style={{ paddingTop: "50px" }} id="firstsection">
                 <div className="container border-0 hometravelsectiondivdiv" style={{ display: "block", textAlign: "left", paddingLeft: "40px", paddingRight: "30px" }}>
                     <div>
                         <div style={{ display: "inline-flex" }}>
@@ -59,7 +97,7 @@ const Home = () => {
                         <h1>Travelling opens  <br />the door to <br /> creating <font style={{ color: "#FAA935" }}>Memories</font></h1>
                     </div>
                     <div style={{ paddingTop: "20px" }}>
-                        <p className="text-secondary">Lorem ipsum dolor sit amet consecetur adipisicing elit. Omnis consequatur dolor nam modi labore facere id ut veniam itaque, sunt unde? Mollitia id soluta animi repudiandae omnis quibusdam illo blanditiis possimus ex sint cupiditate  corrupti labore non, qui est porro excepturi quasi labor.</p>
+                        <p style={{ color: "grey" }} >Lorem ipsum dolor sit amet consecetur adipisicing elit. Omnis consequatur dolor nam modi labore facere id ut veniam itaque, sunt unde? Mollitia id soluta animi repudiandae omnis quibusdam illo blanditiis possimus ex sint cupiditate  corrupti labore non, qui est porro excepturi quasi labor.</p>
                     </div>
                 </div>
                 {/* 2nd section */}
@@ -93,7 +131,46 @@ const Home = () => {
                 </div>
 
             </div>
+            {/*  */}
+            {/* Search section */}
+            {/*  */}
+            <div className="container border-0 mb-5">
+                <div className="saerchdiv row">
+                    <div className="col-sm" style={{ display: "inline-flex" }}>
+                        <div>
+                            <img src={searchlocation} alt="searchlocation" className="searchimage" />
+                        </div>
+                        <div className="ms-2">
+                            <h4 style={{ color: "black", fontWeight: "500" }}>Location</h4>
+                            <input type="text" placeholder="Where are you going" className="searchdiv border-0" />
+                        </div>
+                        <div className="vl ms-3 mt-2"></div>
+                    </div>
+                    <div className="col-sm" style={{ display: "inline-flex" }}>
+                        <div>
+                            <img src={searchdistance} alt="searchlocation" className="searchimage" />
+                        </div>
+                        <div className="ms-2">
+                            <h4 style={{ color: "black", fontWeight: "500" }}>Distance</h4>
+                            <input type="number" placeholder="Distance k/m" className="searchdiv border-0" />
+                        </div>
+                        <div className="vl ms-3 mt-2"></div>
+                    </div>
+                    <div className="col-sm" style={{ display: "inline-flex" }}>
+                        <div>
+                            <img src={people} alt="searchlocation" className="searchimage" />
+                        </div>
+                        <div className="ms-2">
+                            <h4 style={{ color: "black", fontWeight: "500" }}>Max People</h4>
+                            <input type="number" placeholder="0" className="searchdiv border-0" />
+                        </div>
+                    </div>
+                    <div className="col-sm mt-3">
+                        <button style={{ borderRadius: "5px", border: "#FAA935", backgroundColor: "#FAA935" }}><img src={searchicon} className="searchimage" /></button>
+                    </div>
+                </div>
 
+            </div>
             {/*  */}
             {/* 2nd section */}
             {/*  */}
@@ -142,6 +219,169 @@ const Home = () => {
             </div>
 
             {/*  */}
+            {/* Tour Travel sectio */}
+            {/*  */}
+            <div className="container mt-5 mb-5 border-0">
+                <div class="row">
+                    <div class="col-3">
+                        <div>
+                            <img src={tourimg3} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
+                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <img src={loc} alt="" className="tourloc ms-1" />
+                            <p style={{ fontWeight: "600" }}>Bangkok</p>
+                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
+                            <p className="ms-2">Not rated</p>
+                        </div>
+                        <div>
+                            <h4>Snowy Mountains, Thailand</h4>
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$990</font>/per person</h4>
+                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src={tourimg6} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
+                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <img src={loc} alt="" className="tourloc ms-1" />
+                            <p style={{ fontWeight: "600" }}>Tokyo</p>
+                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
+                            <p className="ms-2">Not rated</p>
+                        </div>
+                        <div>
+                            <h4>Cherry Blosoms Spring</h4>
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
+                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src={tourimg2} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
+                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <img src={loc} alt="" className="tourloc ms-1" />
+                            <p style={{ fontWeight: "600" }}>Bali</p>
+                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
+                            <p className="ms-2">4.0(1)</p>
+                        </div>
+                        <div>
+                            <h4>Bali, Indonasia</h4>
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
+                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src={tourimg7} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
+                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <img src={loc} alt="" className="tourloc ms-1" />
+                            <p style={{ fontWeight: "600" }}>paris</p>
+                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
+                            <p className="ms-2">Not rated</p>
+                        </div>
+                        <div>
+                            <h4>Holmen Lofoten,france</h4>
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
+                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
+                        </div>
+                    </div>
+
+                    <div class="w-100 mt-5"></div>
+
+                    <div class="col-3">
+                        <div>
+                            <img src={tourimg4} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
+                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <img src={loc} alt="" className="tourloc ms-1" />
+                            <p style={{ fontWeight: "600" }}>Phuket</p>
+                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
+                            <p className="ms-2">Not rated</p>
+                        </div>
+                        <div>
+                            <h4>Beautifull Sunrise Thailand</h4>
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
+                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src={tourimg1} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
+                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <img src={loc} alt="" className="tourloc ms-1" />
+                            <p style={{ fontWeight: "600" }}>London</p>
+                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
+                            <p className="ms-2">3.3 (4)</p>
+                        </div>
+                        <div>
+                            <h4>Westminister Bridge</h4>
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
+                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src={tourimg5} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
+                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <img src={loc} alt="" className="tourloc ms-1" />
+                            <p style={{ fontWeight: "600" }}>Bali</p>
+                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
+                            <p className="ms-2">Not rated</p>
+                        </div>
+                        <div>
+                            <h4>Nusa Pendia Bali, Indonasia</h4>
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
+                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src={tourimg1} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
+                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <img src={loc} alt="" className="tourloc ms-1" />
+                            <p style={{ fontWeight: "600" }}>London</p>
+                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
+                            <p className="ms-2">Not rated</p>
+                        </div>
+                        <div>
+                            <h4>Heelo world</h4>
+                        </div>
+                        <div style={{ display: "inline-flex" }}>
+                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$990</font>/per person</h4>
+                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/*  */}
             {/* 4th section */}
             {/*  */}
             <div>
@@ -157,16 +397,16 @@ const Home = () => {
                             </div>
                             <div className="row">
                                 <div className="col-sm">
-                                    <div className="experiencebutton" style={{ marginLeft: '10px' }}><h6 className="experiencebuttonp pt-4">12k+</h6></div>
-                                    <h6 style={{ textAlign: "left" }} className="text-secondary pt-3">Successfull Trips</h6>
+                                    <div className="experiencebutton" style={{ marginLeft: '10px' }}><h6 className="experiencebuttonp pt-4 ms-3">12k+</h6></div>
+                                    <h6 style={{ textAlign: "left" }} className="pt-3">Successfull Trips</h6>
                                 </div>
                                 <div className="col-sm">
-                                    <div className="experiencebutton" style={{ marginLeft: '10px' }}><h6 className="experiencebuttonp pt-4">2k+</h6></div>
-                                    <h6 style={{ textAlign: "left" }} className="text-secondary pt-3">Regular clients</h6>
+                                    <div className="experiencebutton" style={{ marginLeft: '10px' }}><h6 className="experiencebuttonp pt-4 ms-3">2k+</h6></div>
+                                    <h6 style={{ textAlign: "left" }} className="pt-3">Regular clients</h6>
                                 </div>
                                 <div className="col-sm">
-                                    <div className="experiencebutton" style={{ marginLeft: '10px' }}><h6 className="experiencebuttonp pt-4">15</h6></div>
-                                    <h6 style={{ textAlign: "left" }} className="text-secondary pt-3">Years experience</h6>
+                                    <div className="experiencebutton" style={{ marginLeft: '10px' }}><h6 className="experiencebuttonp pt-4 ms-3">15</h6></div>
+                                    <h6 style={{ textAlign: "left" }} className="pt-3">Years experience</h6>
                                 </div>
                             </div>
                         </div>
@@ -182,14 +422,13 @@ const Home = () => {
             {/*  */}
             {/* Image Gallery */}
             {/*  */}
-            <div className="container pt-5 border-0">
+            <div id="imagegallary" className="container pt-5 border-0">
                 <div style={{ backgroundColor: "#FAA935", border: "1px solid #FAA935", borderRadius: "20px", width: "100px" }}><p className="hometravelsectiondivp pt-2">Gallery</p></div>
             </div>
             <div className="container border-0">
                 <h1>Visit our customers tour gallery</h1>
             </div>
             <div className="container border-0 ">
-                {/* <div style={{ backgroundColor: "#FAA935", border: "1px solid #FAA935", borderRadius: "20px", width: "100px" }}><p className="hometravelsectiondivp pt-2">Gallery</p></div> */}
                 <div class="row">
                     <div className="col-lg-3 col-md-12 mb-4 mb-lg-0">
                         <div className=" gallaryimage">
@@ -227,6 +466,58 @@ const Home = () => {
 
             </div>
             {/*  */}
+            {/* Slider */}
+            {/*  */}
+
+            <div className="container border-0 mt-5">
+                <div style={{ backgroundColor: "#FAA935", border: "1px solid #FAA935", borderRadius: "20px", width: "100px" }}><p className="hometravelsectiondivp pt-2">Clients love</p></div>
+            </div>
+            <div className="container border-0">
+                <h1 style={{ color: "black", fontWeight: "500" }}>What our clients say about us</h1>
+            </div>
+            <div className="container border-0 mb-5">
+                <div className="row">
+                    <div className="col-sm">
+                        <div>
+                            <p className="avap">Lorem ipsum dolor sit amet consecteturs adipisicing elit. Perspiciatis, nemo! velit facilis magni ab, animi odio vitae! Numquam odit, tempora soluta, sequi est illum fagiat magni earum repudiandae laudantium voluptatum!</p>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm"> <img style={{ borderRadius: "5px" }} src={ava1} className="avaimg" /></div>
+                            <div className="col-sm mt-3">
+                                <h4 className=" namefd">Jhon deo</h4>
+                                <p className=" namefd">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div>
+                            <p className="avap">Lorem ipsum dolor sit amet consecteturs adipisicing elit. Perspiciatis, nemo! velit facilis magni ab, animi odio vitae! Numquam odit, tempora soluta, sequi est illum fagiat magni earum repudiandae laudantium voluptatum!</p>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm"> <img style={{ borderRadius: "5px" }} src={ava2} className="avaimg" /></div>
+                            <div className="col-sm mt-3">
+                                <h4 className=" namefd">Cathrine Jo</h4>
+                                <p className=" namefd">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div>
+                            <p className="avap">Lorem ipsum dolor sit amet consecteturs adipisicing elit. Perspiciatis, nemo! velit facilis magni ab, animi odio vitae! Numquam odit, tempora soluta, sequi est illum fagiat magni earum repudiandae laudantium voluptatum!</p>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm"> <img style={{ borderRadius: "5px" }} src={ava3} className="avaimg" /></div>
+                            <div className="col-sm mt-3">
+                                <h4 className=" namefd">Peter Alice</h4>
+                                <p className=" namefd">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {/*  */}
             {/* EmailDiv */}
             {/*  */}
             <div className='mt-10 container-fluid'>
@@ -250,14 +541,15 @@ const Home = () => {
                     </div>
                 </div>
             </div >
+
             {/*  */}
             {/* Footer section */}
             {/*  */}
             <div className="container-fluid my-5">
-                <footer className="text-center text-lg-start text-white" style={{ backgroundColor: "white" }}>
+                <footer className="text-center text-lg-start text-white " style={{ backgroundColor: "white" }}>
 
                     <section className="row">
-                        <div className="container text-center text-md-start pt-5">
+                        <div className="container text-center text-md-start pt-5 border-0">
                             <div className="row mt-3">
                                 <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                     <img className="text-uppercase fw-bold pb-3" src="https://www.achieversit.com/assets/images/logo-white.png" height={"70px"} />
@@ -267,32 +559,32 @@ const Home = () => {
                                     <div className="" style={{ display: "inline-flex", gap: "10px" }} >
                                         <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={usericon} /></Link>
                                         <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={githubicon} /></Link>
-                                        <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={linkdinicon} /></Link>
-                                        <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={instagramicon} /></Link>
+                                        <Link to='https://www.linkedin.com/company/achieversit-trainings/'><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={linkdinicon} /></Link>
+                                        <Link to="https://www.instagram.com/achieversit/"><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={instagramicon} /></Link>
                                     </div>
                                 </div>
                                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                     <h6 className="text-uppercase fw-bold text-dark pb-3">Discover</h6>
                                     <p>
-                                        <a href="#!" className="text-dark">Home </a>
+                                        <a href="#firstsection" className="text-dark">Home </a>
                                     </p>
                                     <p>
-                                        <a href="#!" className="text-dark">About</a>
+                                        <Link to="/about" className="text-dark">About</Link>
                                     </p>
                                     <p>
-                                        <a href="#!" className="text-dark">Tours</a>
+                                        <Link to="/tours" className="text-dark">Tours</Link>
                                     </p>
                                 </div>
                                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                     <h6 className="text-uppercase fw-bold text-dark pb-3">Quick Link</h6>
                                     <p>
-                                        <a href="#!" className="text-dark">Gallery</a>
+                                        <a href="#imagegallary" className="text-dark">Gallery</a>
                                     </p>
                                     <p>
-                                        <a href="#!" className="text-dark">Login</a>
+                                        <Link to="/login" className="text-dark">Login</Link>
                                     </p>
                                     <p>
-                                        <a href="#!" className="text-dark">Register</a>
+                                        <Link to="/register" className="text-dark">Register</Link>
                                     </p>
                                 </div>
                                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

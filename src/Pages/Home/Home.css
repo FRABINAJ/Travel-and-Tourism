@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
 a {
     text-decoration: none;
 }
@@ -142,4 +146,61 @@ input[type="text"] {
         margin-bottom: 10px;
         margin-right: 0;
     }
+}
+
+/*  */
+.avaimg {
+    height: 60px;
+    width: auto;
+}
+
+.avap {
+    text-align: left;
+}
+
+.namefd {
+    text-align: left;
+}
+
+/* Search div */
+.saerchdiv {
+    border: 0px solid;
+    border-radius: 20px;
+    box-shadow: 1px 2px 1px 2px rgb(222, 216, 216);
+}
+
+.searchimage {
+    height: 20px;
+    width: auto;
+}
+
+.vl {
+    border-left: 2px solid grey;
+    height: 50px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Tour Travel section */
+.tourimg {
+    width: 150px;
+    height: auto;
+}
+
+.tourloc {
+    width: 15px;
+    height: 15px;
+}
+
+.starIcon {
+    width: 15px;
+    height: 15px;
+}
+
+.traveldiv {
+    border: 0px solid;
+    border-radius: 20px;
+    box-shadow: 1px 2px 1px 2px rgb(234, 231, 231);
 }
