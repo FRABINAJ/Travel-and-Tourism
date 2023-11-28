@@ -61,6 +61,7 @@ import MaleTourist from "./male-tourist.png"
 //
 import { Link } from "react-router-dom";
 import { PageHeader } from "react-bootstrap";
+import Footer from "../../Footer/Footer";
 <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -410,9 +411,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm ms-5">
                             <div>
-                                <img src={experience} style={{ height: "300px", width: "auto" }} alt="" />
+                                <img src={experience} style={{ height: "400px", width: "auto" }} alt="" />
                             </div>
                         </div>
                     </div>
@@ -527,8 +528,8 @@ const Home = () => {
                         <div class="column subfieldcol" style={{ display: 'flex', justifyContent: 'left', textAlign: "left", paddingTop: '100px', paddingLeft: "80px" }}>
                             <div>
                                 <h2>Subscribe now for useful traveling information.</h2>
-                                <div style={{ backgroundColor: "white", height: "60px", marginTop: "20px" }}>
-                                    <input style={{ height: "100%", width: "80%", border: "0", outline: "0" }} type="text" placeholder="Enter your email" />
+                                <div style={{ backgroundColor: "white", height: "60px", marginTop: "20px" ,borderRadius:"15px"}}>
+                                    <input style={{ height: "100%", width: "80%", border: "0", outline: "0" ,borderRadius:"20px"}} type="text" placeholder="Enter your email" />
                                     <button style={{ height: "80%", width: "15%" }} type="submit" className='subscribebutton'>Subscribe</button>
                                 </div>
                                 <p style={{ marginTop: "20px" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Quia odio iure quasi! Deserunt, similiquenin!</p>
@@ -546,72 +547,7 @@ const Home = () => {
             {/* Footer section */}
             {/*  */}
             <div className="container-fluid my-5">
-                <footer className="text-center text-lg-start text-white " style={{ backgroundColor: "white" }}>
-
-                    <section className="row">
-                        <div className="container text-center text-md-start pt-5 border-0">
-                            <div className="row mt-3">
-                                <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                                    <img className="text-uppercase fw-bold pb-3" src="https://www.achieversit.com/assets/images/logo-white.png" height={"70px"} />
-                                    <p className="text-dark">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsum, natus!
-                                    </p>
-                                    <div className="" style={{ display: "inline-flex", gap: "10px" }} >
-                                        <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={usericon} /></Link>
-                                        <Link><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={githubicon} /></Link>
-                                        <Link to='https://www.linkedin.com/company/achieversit-trainings/'><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={linkdinicon} /></Link>
-                                        <Link to="https://www.instagram.com/achieversit/"><img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={instagramicon} /></Link>
-                                    </div>
-                                </div>
-                                <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                    <h6 className="text-uppercase fw-bold text-dark pb-3">Discover</h6>
-                                    <p>
-                                        <a href="#firstsection" className="text-dark">Home </a>
-                                    </p>
-                                    <p>
-                                        <Link to="/about" className="text-dark">About</Link>
-                                    </p>
-                                    <p>
-                                        <Link to="/tours" className="text-dark">Tours</Link>
-                                    </p>
-                                </div>
-                                <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                    <h6 className="text-uppercase fw-bold text-dark pb-3">Quick Link</h6>
-                                    <p>
-                                        <a href="#imagegallary" className="text-dark">Gallery</a>
-                                    </p>
-                                    <p>
-                                        <Link to="/login" className="text-dark">Login</Link>
-                                    </p>
-                                    <p>
-                                        <Link to="/register" className="text-dark">Register</Link>
-                                    </p>
-                                </div>
-                                <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                    <h6 className="text-uppercase fw-bold pb-3 text-dark">Contact</h6>
-                                    <div style={{ display: "inline-flex", gap: "6px", textAlign: "center" }}>
-                                        <img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={locationicon} />
-                                        <h6 className="text-dark">Address:</h6>
-                                        <p className="text-dark">Shimoga, Karnataka</p>
-                                    </div>
-                                    <div style={{ display: "inline-flex", gap: "6px", textAlign: "center" }}>
-                                        <img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={emailicon} />
-                                        <h6 className="text-dark">Email:</h6>
-                                        <p className="text-dark">adarshaadi 1997@gmail.com</p>
-                                    </div>
-                                    <div style={{ display: "inline-flex", gap: "6px", textAlign: "center" }}>
-                                        <img className="fas fa-home mr-3 " style={{ height: "20px", width: "20px" }} src={phoneicon} />
-                                        <h6 className="text-dark">Phone:</h6>
-                                        <p className="text-dark">+91 8660435323</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <div className="text-center p-3 text-dark">
-                        Copyright 2023, Design and develop by adarsha A Helvar. All rights reserved.
-                    </div>
-                </footer>
+                <Footer/>
             </div>
         </div >
     )
