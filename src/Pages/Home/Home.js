@@ -6,8 +6,8 @@ import './Home.css'
 import world from "./world.png"
 //
 import hero1 from "./hero-img01.jpg"
-import hero3 from "./video.mp4"
 import hero2 from "./hero-img02.jpg"
+import hero3 from "./hero-img-03.mp4"
 //
 import weather from "././weather.png"
 import plugins from "./guide.png"
@@ -77,8 +77,8 @@ const Home = () => {
                             </div>
                             <div class="col-sm">
                                 <div style={{ paddingTop: "40px", }}>
-                                    <div className="heroimg1div" style={{ height: "400px", width: "180px" }}>
-                                        <video autoplay loop muted controls style={{ borderRadius: "20px", height: "100%" }} className="heroimg">
+                                    <div className="heroimg1div" style={{height:"100%", borderBottom:"none"}}>
+                                        <video autoplay loop muted controls style={{ borderRadius: "20px",  }} className="heroimg">
                                             <source src={hero3} />
                                         </video>
                                     </div>
