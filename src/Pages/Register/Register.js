@@ -4,14 +4,7 @@ import register from "./register.png"
 import user from './user.png'
 import { Link } from 'react-router-dom'
 //
-import locationicon from './location.svg';
-import emailicon from './email.svg';
-import phoneicon from './Phone.svg'
-//
-import usericon from './usericon.svg'
-import githubicon from './githubicon.svg'
-import linkdinicon from './linkdinicon.svg'
-import instagramicon from './instagramicon.svg'
+
 import Footer from '../../Footer/Footer'
 
 const Register = () => {

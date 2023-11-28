@@ -1,19 +1,12 @@
 import React from "react";
 import './Home.css'
 // Footer
-import locationicon from './location.svg';
-import emailicon from './email.svg';
-import phoneicon from './Phone.svg'
-//
-import usericon from './usericon.svg'
-import githubicon from './githubicon.svg'
-import linkdinicon from './linkdinicon.svg'
-import instagramicon from './instagramicon.svg'
+
 //
 import world from "./world.png"
 //
 import hero1 from "./hero-img01.jpg"
-import video from "./video.mp4"
+import hero3 from "./video.mp4"
 import hero2 from "./hero-img02.jpg"
 // search div
 import searchlocation from "./searchlocation.png"
@@ -25,17 +18,6 @@ import weather from "././weather.png"
 import plugins from "./guide.png"
 import sstings from "./customization.png"
 //
-// Tour travel
-import tourimg1 from "./tour-img01.jpg"
-import tourimg2 from "./tour-img02.jpg"
-import tourimg3 from "./tour-img03.jpg"
-import tourimg4 from "./tour-img04.jpg"
-import tourimg5 from "./tour-img05.jpg"
-import tourimg6 from "./tour-img06.jpg"
-import tourimg7 from "./tour-img07.jpg"
-import staricon from "./star icon.png"
-import loc from "./loc.png"
-// Section 4
 import experience from "./experience.png"
 //
 // Image Gallery
@@ -62,6 +44,7 @@ import MaleTourist from "./male-tourist.png"
 import { Link } from "react-router-dom";
 import { PageHeader } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
+import Tours_list from "../../Tours_List/Tours_list";
 <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -75,9 +58,6 @@ import Footer from "../../Footer/Footer";
 />
 //
 const Home = () => {
-    function ala() {
-        alert("Create an account")
-    }
 
     return (
         <div>
@@ -113,9 +93,11 @@ const Home = () => {
                                 </div>
                             </div>
                             <div class="col-sm">
-                                <div style={{ paddingTop: "40px" }}>
-                                    <div className="heroimg1div">
-                                        <img style={{ borderRadius: "20px" }} className="heroimg" src={hero1} alt="" />
+                                <div style={{ paddingTop: "40px", }}>
+                                    <div className="heroimg1div" style={{ height: "400px", width: "180px" }}>
+                                        <video autoplay loop muted controls style={{ borderRadius: "20px", height: "100%" }} className="heroimg">
+                                            <source src={hero3} />
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -221,168 +203,11 @@ const Home = () => {
 
             {/*  */}
             {/* Tour Travel sectio */}
-            {/*  */}
-            <div className="container mt-5 mb-5 border-0">
-                <div class="row">
-                    <div class="col-3">
-                        <div>
-                            <img src={tourimg3} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
-                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <img src={loc} alt="" className="tourloc ms-1" />
-                            <p style={{ fontWeight: "600" }}>Bangkok</p>
-                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
-                            <p className="ms-2">Not rated</p>
-                        </div>
-                        <div>
-                            <h4>Snowy Mountains, Thailand</h4>
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$990</font>/per person</h4>
-                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src={tourimg6} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
-                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <img src={loc} alt="" className="tourloc ms-1" />
-                            <p style={{ fontWeight: "600" }}>Tokyo</p>
-                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
-                            <p className="ms-2">Not rated</p>
-                        </div>
-                        <div>
-                            <h4>Cherry Blosoms Spring</h4>
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
-                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src={tourimg2} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
-                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <img src={loc} alt="" className="tourloc ms-1" />
-                            <p style={{ fontWeight: "600" }}>Bali</p>
-                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
-                            <p className="ms-2">4.0(1)</p>
-                        </div>
-                        <div>
-                            <h4>Bali, Indonasia</h4>
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
-                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src={tourimg7} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
-                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <img src={loc} alt="" className="tourloc ms-1" />
-                            <p style={{ fontWeight: "600" }}>paris</p>
-                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
-                            <p className="ms-2">Not rated</p>
-                        </div>
-                        <div>
-                            <h4>Holmen Lofoten,france</h4>
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
-                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
-                        </div>
-                    </div>
-
-                    <div class="w-100 mt-5"></div>
-
-                    <div class="col-3">
-                        <div>
-                            <img src={tourimg4} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
-                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <img src={loc} alt="" className="tourloc ms-1" />
-                            <p style={{ fontWeight: "600" }}>Phuket</p>
-                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
-                            <p className="ms-2">Not rated</p>
-                        </div>
-                        <div>
-                            <h4>Beautifull Sunrise Thailand</h4>
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
-                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src={tourimg1} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
-                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <img src={loc} alt="" className="tourloc ms-1" />
-                            <p style={{ fontWeight: "600" }}>London</p>
-                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
-                            <p className="ms-2">3.3 (4)</p>
-                        </div>
-                        <div>
-                            <h4>Westminister Bridge</h4>
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
-                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src={tourimg5} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
-                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <img src={loc} alt="" className="tourloc ms-1" />
-                            <p style={{ fontWeight: "600" }}>Bali</p>
-                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
-                            <p className="ms-2">Not rated</p>
-                        </div>
-                        <div>
-                            <h4>Nusa Pendia Bali, Indonasia</h4>
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$99</font>/per person</h4>
-                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src={tourimg1} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
-                            {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <img src={loc} alt="" className="tourloc ms-1" />
-                            <p style={{ fontWeight: "600" }}>London</p>
-                            <img src={staricon} alt="staricon" className="starIcon ms-5 mt-1" />
-                            <p className="ms-2">Not rated</p>
-                        </div>
-                        <div>
-                            <h4>Heelo world</h4>
-                        </div>
-                        <div style={{ display: "inline-flex" }}>
-                            <h4 style={{ color: "grey" }}><font style={{ color: "orange" }}>$990</font>/per person</h4>
-                            <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             {/*  */}
+            <Tours_list />
+            {/*  */}
+
             {/* 4th section */}
             {/*  */}
             <div>
@@ -528,8 +353,8 @@ const Home = () => {
                         <div class="column subfieldcol" style={{ display: 'flex', justifyContent: 'left', textAlign: "left", paddingTop: '100px', paddingLeft: "80px" }}>
                             <div>
                                 <h2>Subscribe now for useful traveling information.</h2>
-                                <div style={{ backgroundColor: "white", height: "60px", marginTop: "20px" ,borderRadius:"15px"}}>
-                                    <input style={{ height: "100%", width: "80%", border: "0", outline: "0" ,borderRadius:"20px"}} type="text" placeholder="Enter your email" />
+                                <div style={{ backgroundColor: "white", height: "60px", marginTop: "20px", borderRadius: "15px" }}>
+                                    <input style={{ height: "100%", width: "80%", border: "0", outline: "0", borderRadius: "20px" }} type="text" placeholder="Enter your email" />
                                     <button style={{ height: "80%", width: "15%" }} type="submit" className='subscribebutton'>Subscribe</button>
                                 </div>
                                 <p style={{ marginTop: "20px" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Quia odio iure quasi! Deserunt, similiquenin!</p>
@@ -547,7 +372,7 @@ const Home = () => {
             {/* Footer section */}
             {/*  */}
             <div className="container-fluid my-5">
-                <Footer/>
+                <Footer />
             </div>
         </div >
     )
