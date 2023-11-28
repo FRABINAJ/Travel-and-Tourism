@@ -1,0 +1,24 @@
+.inputclass {
+    border: none;
+    border-color: gray;
+    height: 50px;
+}
+
+.booknowbtn {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.booknowbtn:hover {
+    background-color: rgb(213, 140, 4);
+}
+
+.booknowbtn:active {
+    background-color: rgb(255, 212, 131);
+}

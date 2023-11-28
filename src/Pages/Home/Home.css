@@ -17,14 +17,7 @@ a {
     width: auto;
 }
 
-.hometravelsectiondivp {
-    font-family: "Brush Script MT", cursive;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 200;
-    line-height: 26.4px;
-}
+
 
 .heroimg1div {
     border: 2px solid #FAA935;
@@ -149,18 +142,8 @@ input[type="text"] {
 }
 
 /*  */
-.avaimg {
-    height: 60px;
-    width: auto;
-}
 
-.avap {
-    text-align: left;
-}
 
-.namefd {
-    text-align: left;
-}
 
 /* Search div */
 .saerchdiv {

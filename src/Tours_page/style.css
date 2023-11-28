@@ -1,0 +1,30 @@
+.image {
+    width: 800px;
+}
+
+.star {
+    height: 20px;
+    width: auto;
+}
+
+.star2 {
+    height: 25px;
+    width: auto;
+}
+
+
+
+.scrollable-content {
+    overflow-y: scroll;
+    height: 100vh;
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
