@@ -4,11 +4,9 @@ import register from "./register.png"
 import user from './user.png'
 import { Link } from 'react-router-dom'
 //
-
 import Footer from '../../Footer/Footer'
 
 const Register = () => {
-  // Form validation 
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -37,13 +35,9 @@ const Register = () => {
       alert('Form submitted successfully');
     }
   }
-
-  // 
-
   return (
     <div>
       <div>
-
         <>
           <section id="registerid" className="h-100 " style={{ backgroundColor: "#eee" }}>
             <div className="container-fluid py-5 ">
@@ -92,14 +86,11 @@ const Register = () => {
             </div>
           </section>
         </>
-
-
       </div >
       <div className="container-fluid my-5">
         <Footer />
       </div>
     </div >
-
   )
 }
 

@@ -9,7 +9,6 @@ import Footer from '../../Footer/Footer'
 
 const Login = () => {
   // Form validation 
-  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -31,9 +30,6 @@ const Login = () => {
     }
   }
 
-  //changing page
-
-  //
   return (
     <div>
       <div>

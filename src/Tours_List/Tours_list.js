@@ -19,7 +19,7 @@ function Tours_list() {
     <div>
       <div id='tourid' className="container mt-5 mb-5 border-0">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div>
                             <img src={tourimg3} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
                             {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
@@ -38,7 +38,7 @@ function Tours_list() {
                             <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div>
                             <img src={tourimg6} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
                             {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
@@ -57,7 +57,7 @@ function Tours_list() {
                             <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div>
                             <img src={tourimg2} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
                             {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
@@ -76,7 +76,7 @@ function Tours_list() {
                             <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div>
                             <img src={tourimg7} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
                             {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
@@ -98,7 +98,7 @@ function Tours_list() {
 
                     <div class="w-100 mt-5"></div>
 
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div>
                             <img src={tourimg4} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
                             {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
@@ -117,7 +117,7 @@ function Tours_list() {
                             <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div>
                             <img src={tourimg1} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
                             {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
@@ -136,7 +136,7 @@ function Tours_list() {
                             <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div>
                             <img src={tourimg5} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
                             {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}
@@ -155,7 +155,7 @@ function Tours_list() {
                             <button style={{ backgroundColor: "orange", color: "white" }} className="btn ms-2" onClick={ala}>Book now</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div>
                             <img src={tourimg1} alt="tourimg1" className="tourimg" style={{ width: "100%" }} />
                             {/* <div style={{ background: "orange", color: "white" }}>Featured</div> */}

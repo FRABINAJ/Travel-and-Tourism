@@ -8,11 +8,6 @@ import world from "./world.png"
 import hero1 from "./hero-img01.jpg"
 import hero3 from "./video.mp4"
 import hero2 from "./hero-img02.jpg"
-// search div
-import searchlocation from "./searchlocation.png"
-import searchdistance from "./searchdistance.png"
-import people from "./people.png"
-import searchicon from "./searchicon.png"
 //
 import weather from "././weather.png"
 import plugins from "./guide.png"
@@ -20,31 +15,22 @@ import sstings from "./customization.png"
 //
 import experience from "./experience.png"
 //
-// Image Gallery
-import gallery1 from "./gallery-01.jpg"
-import gallery2 from "./gallery-02.jpg"
-import gallery3 from "./gallery-03.jpg"
-import gallery4 from "./gallery-04.jpg"
-import gallery5 from "./gallery-05.jpg"
-import gallery6 from "./gallery-06.jpg"
-import gallery7 from "./gallery-07.jpg"
-import gallery8 from "./gallery-08.jpg"
 //Slideer div
 //
 import ava1 from "./ava-1.jpg"
 import ava2 from "./ava-2.jpg"
 import ava3 from "./ava-3.jpg"
+
+//
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdb-ui-kit/css/mdb.min.css';
-//
-
 // emailDiv
-import MaleTourist from "./male-tourist.png"
 //
-import { Link } from "react-router-dom";
-import { PageHeader } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
 import Tours_list from "../../Tours_List/Tours_list";
+import Image_gallery from "../../Image_gallary/Image_gallery";
+import Subscribe_email from "../../Subscribe_email/Subscribe_email";
+import Search_section from "../../Serach_section/Search_section";
 <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -117,43 +103,7 @@ const Home = () => {
             {/*  */}
             {/* Search section */}
             {/*  */}
-            <div className="container border-0 mb-5">
-                <div className="saerchdiv row">
-                    <div className="col-sm" style={{ display: "inline-flex" }}>
-                        <div>
-                            <img src={searchlocation} alt="searchlocation" className="searchimage" />
-                        </div>
-                        <div className="ms-2">
-                            <h4 style={{ color: "black", fontWeight: "500" }}>Location</h4>
-                            <input type="text" placeholder="Where are you going" className="searchdiv border-0" />
-                        </div>
-                        <div className="vl ms-3 mt-2"></div>
-                    </div>
-                    <div className="col-sm" style={{ display: "inline-flex" }}>
-                        <div>
-                            <img src={searchdistance} alt="searchlocation" className="searchimage" />
-                        </div>
-                        <div className="ms-2">
-                            <h4 style={{ color: "black", fontWeight: "500" }}>Distance</h4>
-                            <input type="number" placeholder="Distance k/m" className="searchdiv border-0" />
-                        </div>
-                        <div className="vl ms-3 mt-2"></div>
-                    </div>
-                    <div className="col-sm" style={{ display: "inline-flex" }}>
-                        <div>
-                            <img src={people} alt="searchlocation" className="searchimage" />
-                        </div>
-                        <div className="ms-2">
-                            <h4 style={{ color: "black", fontWeight: "500" }}>Max People</h4>
-                            <input type="number" placeholder="0" className="searchdiv border-0" />
-                        </div>
-                    </div>
-                    <div className="col-sm mt-3">
-                        <button style={{ borderRadius: "5px", border: "#FAA935", backgroundColor: "#FAA935" }}><img src={searchicon} className="searchimage" /></button>
-                    </div>
-                </div>
-
-            </div>
+            <Search_section />
             {/*  */}
             {/* 2nd section */}
             {/*  */}
@@ -248,49 +198,7 @@ const Home = () => {
             {/*  */}
             {/* Image Gallery */}
             {/*  */}
-            <div id="imagegallary" className="container pt-5 border-0">
-                <div style={{ backgroundColor: "#FAA935", border: "1px solid #FAA935", borderRadius: "20px", width: "100px" }}><p className="hometravelsectiondivp pt-2">Gallery</p></div>
-            </div>
-            <div className="container border-0">
-                <h1>Visit our customers tour gallery</h1>
-            </div>
-            <div className="container border-0 ">
-                <div class="row">
-                    <div className="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                        <div className=" gallaryimage">
-                            <img src={gallery1} class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-                        </div>
-                        <div className=" gallaryimage">
-                            <img src={gallery5} class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-                        </div>
-                    </div>
-                    <div className="col-lg-3 mb-4 mb-lg-0">
-                        <div className=" gallaryimage">
-                            <img src={gallery2} class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-                        </div>
-                        <div className=" gallaryimage">
-                            <img src={gallery6} class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-                        </div>
-                    </div>
-                    <div className="col-lg-3 mb-4 mb-lg-0">
-                        <div className=" gallaryimage">
-                            <img src={gallery3} class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-                        </div>
-                        <div className=" gallaryimage">
-                            <img src={gallery7} class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-                        </div>
-                    </div>
-                    <div className="col-lg-3 mb-4 mb-lg-0">
-                        <div className=" gallaryimage">
-                            <img src={gallery4} class="w-100 shadow-1-strong rounded mb-4" alt="New Image 1" />
-                        </div>
-                        <div className=" gallaryimage">
-                            <img src={gallery8} class="w-100 shadow-1-strong rounded mb-4" alt="New Image 2" />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <Image_gallery />
             {/*  */}
             {/* Slider */}
             {/*  */}
@@ -346,27 +254,7 @@ const Home = () => {
             {/*  */}
             {/* EmailDiv */}
             {/*  */}
-            <div className='mt-10 container-fluid'>
-                <div className='subscribediv'>
-                    <div class="columns subfieldmaincol">
-                        {/* 1st column */}
-                        <div class="column subfieldcol" style={{ display: 'flex', justifyContent: 'left', textAlign: "left", paddingTop: '100px', paddingLeft: "80px" }}>
-                            <div>
-                                <h2>Subscribe now for useful traveling information.</h2>
-                                <div style={{ backgroundColor: "white", height: "60px", marginTop: "20px", borderRadius: "15px" }}>
-                                    <input style={{ height: "100%", width: "80%", border: "0", outline: "0", borderRadius: "20px" }} type="text" placeholder="Enter your email" />
-                                    <button style={{ height: "80%", width: "15%" }} type="submit" className='subscribebutton'>Subscribe</button>
-                                </div>
-                                <p style={{ marginTop: "20px" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Quia odio iure quasi! Deserunt, similiquenin!</p>
-                            </div>
-                        </div>
-                        {/* 2nd column */}
-                        <div class="column subfieldcol">
-                            <img src={MaleTourist} alt="male-Tourist" className='responsive responsive-image' />
-                        </div>
-                    </div>
-                </div>
-            </div >
+            <Subscribe_email />
 
             {/*  */}
             {/* Footer section */}
